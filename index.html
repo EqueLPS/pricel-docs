@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victory X — политика конфиденциальности</title>
+<style>
+  :root{--bg:#0f1319;--card:#171c24;--line:#242b36;--text:#e9edf3;--muted:#9aa3b1;--accent:#ff7a45}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .logo{width:44px;height:44px;border-radius:12px;background:#000;display:flex;align-items:center;justify-content:center}
+  h1{font-size:28px;margin:0;letter-spacing:-.4px}
+  .sub{color:var(--muted);font-size:13px;margin:6px 0 28px}
+  h2{font-size:18px;margin:30px 0 10px}
+  p,li{color:#d6dce6}
+  ul{padding-left:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  a{color:var(--accent)}
+  code{background:#0b0f14;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
+  footer{margin-top:40px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h4.5l5.2 7.3 6.3-8.3H24l-9.6 12.6h-4.2L4 7z" fill="#fff"/></svg>
+    </div>
+    <div><h1>Victory X</h1><div class="sub">Политика конфиденциальности · обновлено 11 ноября 2026</div></div>
+  </header>
+
+  <p>Victory X — расширение для браузера, которое помогает менеджеру работать с лидами в CRM Victory:
+  показывает факты о компании, подсказки по ходу разговора и вносит итог звонка в CRM.</p>
+
+  <h2>Какие данные обрабатываются</h2>
+  <ul>
+    <li><b>Данные CRM.</b> Расширение читает карточку лида, задачи и переписку в CRM Victory, чтобы показать их
+      менеджеру и внести итог звонка. Эти данные передаются только в CRM вашей компании.</li>
+    <li><b>Данные карт.</b> Название и адрес компании используются для запроса её карточки на Яндекс Картах
+      и 2ГИС — чтобы собрать факты: рейтинг, отзывы, фото, место в выдаче.</li>
+    <li><b>Настройки.</b> Имя менеджера, цены, правила CRM, код доступа к внутреннему сервису и ключи API
+      (если менеджер их ввёл) хранятся в хранилище браузера на компьютере менеджера.</li>
+    <li><b>Подсказки ИИ (по желанию).</b> Если менеджер включил ИИ и ввёл ключ, фрагменты разговора и факты лида
+      отправляются выбранному им провайдеру (OpenAI, Anthropic или SpeShu) напрямую, с его ключом.</li>
+  </ul>
+
+  <h2>Чего расширение не делает</h2>
+  <ul>
+    <li>Не передаёт данные разработчику: у расширения нет собственного сервера.</li>
+    <li>Не продаёт данные и не передаёт их третьим лицам, кроме CRM компании и выбранного провайдера ИИ.</li>
+    <li>Не собирает аналитику, не устанавливает трекеры и не читает другие сайты, кроме доменов из разрешений:
+      victory-crm.ru, yandex.ru, 2gis.ru, coder.afihub.ru и API выбранного провайдера ИИ.</li>
+    <li>Не изменяет код страниц CRM.</li>
+    <li>Не использует данные для оценки кредитоспособности и не для целей, не связанных с работой менеджера.</li>
+  </ul>
+
+  <h2>Хранение и удаление</h2>
+  <div class="card">Все настройки и кэш хранятся локально, в браузере менеджера. Их можно удалить, удалив расширение
+  или очистив данные расширения в настройках браузера. Ключи API и код доступа никуда не отправляются, кроме
+  соответствующих сервисов.</div>
+
+  <h2>Дети</h2>
+  <p>Расширение предназначено для сотрудников компаний и не адресовано детям.</p>
+
+  <h2>Изменения</h2>
+  <p>Актуальная версия политики публикуется по этому адресу. При существенных изменениях обновляется дата.</p>
+
+  <h2>Контакты</h2>
+  <p>По вопросам обработки данных: <a href="mailto:CONTACT@example.com">CONTACT@example.com</a>
+  <br><span style="color:#9aa3b1;font-size:14px">(замените адрес на свой контактный e-mail издателя)</span></p>
+
+  <footer>Victory X · расширение для CRM Victory</footer>
+</div>
+</body>
+</html>
